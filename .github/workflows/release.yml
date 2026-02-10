@@ -12,6 +12,15 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - name: Publish forgeai-core
         run: cargo publish -p forgeai-core --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      - name: Publish foundational crates
+        run: |
+          cargo publish -p forgeai-tools --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-stream --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-schema --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-observability --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-replay --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-router --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+          cargo publish -p forgeai-gateway --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
       - name: Publish adapter crates
         run: |
           cargo publish -p forgeai-adapter-openai --token ${{ secrets.CARGO_REGISTRY_TOKEN }}

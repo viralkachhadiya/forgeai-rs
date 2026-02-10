@@ -1,0 +1,13 @@
+[package]
+name = "tool-loop"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+forgeai = { path = "../../crates/forgeai", features = ["openai"] }
+forgeai-adapter-openai = { path = "../../crates/forgeai-adapter-openai" }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

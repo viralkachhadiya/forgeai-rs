@@ -90,6 +90,8 @@ See runnable examples in:
 - `examples/streaming`
 - `examples/tools`
 - `examples/structured-output`
+- `examples/tool-loop`
+- `examples/failover-router`
 
 ## Provider environment variables
 

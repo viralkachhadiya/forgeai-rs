@@ -1,0 +1,16 @@
+[package]
+name = "failover-router"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+
+[dependencies]
+forgeai = { path = "../../crates/forgeai", features = ["openai", "anthropic"] }
+forgeai-adapter-openai = { path = "../../crates/forgeai-adapter-openai" }
+forgeai-adapter-anthropic = { path = "../../crates/forgeai-adapter-anthropic" }
+forgeai-router = { path = "../../crates/forgeai-router" }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+url = "2"

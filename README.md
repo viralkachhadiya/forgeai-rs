@@ -16,6 +16,8 @@ Implemented milestones:
 - OpenAI adapter: real `chat` + `chat_stream` with contract tests
 - Anthropic adapter: real `chat` + `chat_stream` with contract tests
 - Gemini adapter: real `chat` + `chat_stream` with contract tests
+- Multi-step tool-call loop orchestration (`chat_with_tools`, `chat_with_tools_streaming`)
+- Provider failover router (`forgeai-router::FailoverRouter`)
 
 ## Workspace crates
 
@@ -94,6 +96,31 @@ See runnable examples in:
 - OpenAI: `OPENAI_API_KEY`, optional `OPENAI_BASE_URL`
 - Anthropic: `ANTHROPIC_API_KEY`, optional `ANTHROPIC_BASE_URL`
 - Gemini: `GEMINI_API_KEY`, optional `GEMINI_BASE_URL`
+
+## Advanced features
+
+### Tool-call loop orchestration
+
+`forgeai::Client` supports automatic tool-call execution loops:
+
+- `chat_with_tools(...)`
+- `chat_with_tools_streaming(...)`
+
+These methods repeatedly:
+
+1. generate model output
+2. execute returned tool calls
+3. append tool output to conversation
+4. re-run generation until final answer or max-iteration limit
+
+### Failover routing
+
+`forgeai-router` provides `FailoverRouter` implementing `ChatAdapter`.
+It tries providers in order and fails over on retryable errors:
+
+- `ForgeError::Transport`
+- `ForgeError::Provider`
+- `ForgeError::RateLimited`
 
 ## Development
 

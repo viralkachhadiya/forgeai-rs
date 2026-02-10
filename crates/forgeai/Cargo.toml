@@ -19,10 +19,15 @@ gemini = ["dep:forgeai-adapter-gemini"]
 
 [dependencies]
 forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+forgeai-tools = { path = "../forgeai-tools", version = "0.1.0" }
 forgeai-adapter-openai = { path = "../forgeai-adapter-openai", version = "0.1.0", optional = true }
 forgeai-adapter-anthropic = { path = "../forgeai-adapter-anthropic", version = "0.1.0", optional = true }
 forgeai-adapter-gemini = { path = "../forgeai-adapter-gemini", version = "0.1.0", optional = true }
+futures-util = "0.3"
+serde_json.workspace = true
 thiserror.workspace = true
 
 [dev-dependencies]
+async-stream = "0.3"
+async-trait.workspace = true
 tokio.workspace = true

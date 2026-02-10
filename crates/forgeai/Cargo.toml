@@ -1,0 +1,28 @@
+[package]
+name = "forgeai"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai"
+description = "Unified Rust SDK for multi-provider GenAI"
+keywords = ["ai", "llm", "genai", "sdk", "streaming"]
+categories = ["api-bindings", "asynchronous"]
+
+[features]
+default = ["rustls"]
+rustls = []
+openai = ["dep:forgeai-adapter-openai"]
+anthropic = ["dep:forgeai-adapter-anthropic"]
+gemini = ["dep:forgeai-adapter-gemini"]
+
+[dependencies]
+forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+forgeai-adapter-openai = { path = "../forgeai-adapter-openai", version = "0.1.0", optional = true }
+forgeai-adapter-anthropic = { path = "../forgeai-adapter-anthropic", version = "0.1.0", optional = true }
+forgeai-adapter-gemini = { path = "../forgeai-adapter-gemini", version = "0.1.0", optional = true }
+thiserror.workspace = true
+
+[dev-dependencies]
+tokio.workspace = true

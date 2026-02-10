@@ -1,0 +1,15 @@
+[package]
+name = "forgeai-schema"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai-schema"
+description = "Schema utilities for forgeai-rs"
+keywords = ["json-schema", "ai", "llm"]
+categories = ["encoding"]
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true

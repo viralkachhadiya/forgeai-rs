@@ -1,0 +1,9 @@
+[package]
+name = "tools"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+forgeai-tools = { path = "../../crates/forgeai-tools" }
+serde_json = "1"

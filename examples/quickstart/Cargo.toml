@@ -1,0 +1,11 @@
+[package]
+name = "quickstart"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+forgeai = { path = "../../crates/forgeai", features = ["openai"] }
+forgeai-adapter-openai = { path = "../../crates/forgeai-adapter-openai" }
+forgeai-core = { path = "../../crates/forgeai-core" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

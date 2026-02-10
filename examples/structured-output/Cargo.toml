@@ -1,0 +1,9 @@
+[package]
+name = "structured-output"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+forgeai-schema = { path = "../../crates/forgeai-schema" }
+serde = { version = "1", features = ["derive"] }

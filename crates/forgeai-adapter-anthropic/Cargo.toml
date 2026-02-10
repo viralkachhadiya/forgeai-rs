@@ -1,0 +1,17 @@
+[package]
+name = "forgeai-adapter-anthropic"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai-adapter-anthropic"
+description = "Anthropic adapter for forgeai-rs"
+keywords = ["anthropic", "ai", "llm"]
+categories = ["api-bindings", "asynchronous"]
+
+[dependencies]
+async-trait.workspace = true
+forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+url.workspace = true
+uuid.workspace = true

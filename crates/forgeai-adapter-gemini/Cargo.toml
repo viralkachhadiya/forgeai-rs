@@ -1,0 +1,17 @@
+[package]
+name = "forgeai-adapter-gemini"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai-adapter-gemini"
+description = "Gemini adapter for forgeai-rs"
+keywords = ["gemini", "ai", "llm"]
+categories = ["api-bindings", "asynchronous"]
+
+[dependencies]
+async-trait.workspace = true
+forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+url.workspace = true
+uuid.workspace = true

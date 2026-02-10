@@ -1,0 +1,14 @@
+[package]
+name = "forgeai-stream"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai-stream"
+description = "Streaming protocol types for forgeai-rs"
+keywords = ["streaming", "ai", "llm"]
+categories = ["asynchronous"]
+
+[dependencies]
+forgeai-core = { path = "../forgeai-core", version = "0.1.0" }

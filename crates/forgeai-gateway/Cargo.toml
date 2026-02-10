@@ -1,0 +1,14 @@
+[package]
+name = "forgeai-gateway"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation = "https://docs.rs/forgeai-gateway"
+description = "Gateway service for forgeai-rs"
+keywords = ["gateway", "http", "ai"]
+categories = ["web-programming::http-server"]
+
+[dependencies]
+thiserror.workspace = true

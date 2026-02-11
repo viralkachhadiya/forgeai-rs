@@ -6,6 +6,7 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-replay"
+readme = "README.md"
 description = "Record/replay test harness for forgeai-rs"
 keywords = ["testing", "replay", "ai"]
 categories = ["development-tools::testing"]

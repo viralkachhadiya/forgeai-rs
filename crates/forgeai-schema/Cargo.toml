@@ -6,6 +6,7 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-schema"
+readme = "README.md"
 description = "Schema utilities for forgeai-rs"
 keywords = ["json-schema", "ai", "llm"]
 categories = ["encoding"]

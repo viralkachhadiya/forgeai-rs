@@ -6,13 +6,14 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-router"
+readme = "README.md"
 description = "Routing and fallback policies for forgeai-rs"
 keywords = ["routing", "fallback", "ai"]
 categories = ["algorithms", "asynchronous"]
 
 [dependencies]
 async-trait.workspace = true
-forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+forgeai-core = { path = "../forgeai-core", version = "0.1.1" }
 
 [dev-dependencies]
 serde_json.workspace = true

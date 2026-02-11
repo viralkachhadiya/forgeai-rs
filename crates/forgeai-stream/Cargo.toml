@@ -6,9 +6,10 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-stream"
+readme = "README.md"
 description = "Streaming protocol types for forgeai-rs"
 keywords = ["streaming", "ai", "llm"]
 categories = ["asynchronous"]
 
 [dependencies]
-forgeai-core = { path = "../forgeai-core", version = "0.1.0" }
+forgeai-core = { path = "../forgeai-core", version = "0.1.1" }

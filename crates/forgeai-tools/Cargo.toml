@@ -6,6 +6,7 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-tools"
+readme = "README.md"
 description = "Tool calling helpers for forgeai-rs"
 keywords = ["tools", "function-calling", "ai"]
 categories = ["api-bindings", "asynchronous"]

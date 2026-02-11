@@ -6,6 +6,7 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-gateway"
+readme = "README.md"
 description = "Gateway service for forgeai-rs"
 keywords = ["gateway", "http", "ai"]
 categories = ["web-programming::http-server"]

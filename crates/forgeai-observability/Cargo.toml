@@ -6,6 +6,7 @@ license.workspace = true
 repository.workspace = true
 homepage.workspace = true
 documentation = "https://docs.rs/forgeai-observability"
+readme = "README.md"
 description = "Observability helpers for forgeai-rs"
 keywords = ["tracing", "metrics", "otel"]
 categories = ["development-tools::debugging"]

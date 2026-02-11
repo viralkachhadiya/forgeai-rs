@@ -16,15 +16,15 @@ jobs:
           # cargo publish -p forgeai-stream --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
           # cargo publish -p forgeai-schema --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
           # cargo publish -p forgeai-observability --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
-      - name: Publish foundational crates
-        run: |
-          cargo publish -p forgeai-replay --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
-          cargo publish -p forgeai-router --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
-          cargo publish -p forgeai-gateway --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      # - name: Publish foundational crates
+      #   run: |
+      #     cargo publish -p forgeai-replay --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      #     cargo publish -p forgeai-router --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      #     cargo publish -p forgeai-gateway --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      # cargo publish -p forgeai-adapter-openai --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
+      #     cargo publish -p forgeai-adapter-anthropic --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
       - name: Publish adapter crates
         run: |
-          cargo publish -p forgeai-adapter-openai --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
-          cargo publish -p forgeai-adapter-anthropic --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
           cargo publish -p forgeai-adapter-gemini --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
       - name: Publish forgeai
         run: cargo publish -p forgeai --token ${{ secrets.CARGO_REGISTRY_TOKEN }}
